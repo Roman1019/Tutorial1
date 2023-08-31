@@ -1,28 +1,57 @@
 :root {
   --color-brand: #fd9222;
-  --color-primary: #111111;
+  --color-prіmary: #1e1823;
   --color-primary-light: #ffffff;
 }
 
 .logo {
-  color: var(--color-primary);
+  color: #111111;
 }
 
 .nav-link {
-  color: var(--color-primary);
+  color: #111111;
+}
+.nav-link:hover {
+  color: var(--color-brand);
 }
 
 .hero-section {
-  background-color: var(--color-primary);
+  background-color: var(--color-prіmary);
 }
+
 .hero-title {
   color: var(--color-primary-light);
 }
 
-.hero-button {
+.button-primary {
   background-color: var(--color-brand);
+  color: var(--color-primary-light);
+  cursor: pointer;
+  border: none;
   border-radius: 100px;
 }
-.hero-scroll {
+
+.button-primary:hover {
+  background-color: #fcf1e0;
+  color: var(--color-brand);
+}
+
+.hero-button {
+  background-color: var(--color-prіmary);
   color: var(--color-primary-light);
+  cursor: pointer;
+  border: 1px solid var(--color-primary-light);
+  border-radius: 100px;
+}
+.hero-button:hover {
+  color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+.hero-scroll {
+  background-color: var(--color-prіmary);
+  color: var(--color-primary-light);
+}
+
+.hero-scroll:hover {
+  color: var(--color-brand);
 }
