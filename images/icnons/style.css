@@ -4,25 +4,40 @@
   --color-primary-light: #ffffff;
   --color-background: #1e1823;
   --color-background-light: #fafafa;
+  --color-light-tr: #FFFFFFB2;
 }
 
-.logo {
+/* Base */
+body {
   color: var(--color-prіmary);
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-background-light);
+  font-size: 14px;
 }
 
-.nav-link {
-  color: var(--color-prіmary);
-}
-.nav-link:hover {
-  color: var(--color-brand);
+a {
+  text-decoration: none;
 }
 
-.hero-section {
-  background-color: var(--color-background);
+ul {
+  list-style-type: none;
 }
 
-.hero-title {
-  color: var(--color-primary-light);
+button {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button-primary {
@@ -32,6 +47,46 @@
   padding: 14px 40px;
   border: none;
   border-radius: 100px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.21;
+}
+
+/* header */
+.logo {
+  color: var(--color-prіmary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  font-style: italic;
+}
+
+.nav-link {
+  color: var(--color-prіmary);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02px;
+}
+.nav-link:hover {
+  color: var(--color-brand);
+}
+
+/* hero section */
+.hero-section {
+  background-color: var(--color-background);
+}
+
+.hero-title {
+  color: var(--color-primary-light);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
 }
 
 .button-primary:hover {
@@ -46,6 +101,9 @@
   border: 1px solid var(--color-primary-light);
   padding: 14px 40px;
   border-radius: 100px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.21;
 }
 .hero-button:hover {
   color: var(--color-brand);
@@ -54,8 +112,30 @@
 .hero-scroll {
   background-color: var(--color-prіmary);
   color: var(--color-primary-light);
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -0.03;
 }
 
 .hero-scroll:hover {
   color: var(--color-brand);
+}
+
+/* advatage title */
+.advantage-section {
+  background-color: var(--color-background);
+}
+.advantage-title {
+  color: var(--color-primary-light);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+}
+
+.advantage-text {
+  color: var(--color-light-tr) ;
+  font-weight: 400;
+  line-height: 1.21;
+  letter-spacing: -0.28px;
+  b
 }
