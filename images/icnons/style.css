@@ -4,7 +4,7 @@
   --color-primary-light: #ffffff;
   --color-background: #1e1823;
   --color-background-light: #fafafa;
-  --color-light-tr: #FFFFFFB2;
+  --color-light-tr: #ffffffb2;
 }
 
 /* Base */
@@ -21,6 +21,8 @@ a {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -133,9 +135,8 @@ button {
 }
 
 .advantage-text {
-  color: var(--color-light-tr) ;
+  color: var(--color-light-tr);
   font-weight: 400;
   line-height: 1.21;
   letter-spacing: -0.28px;
-  b
 }
