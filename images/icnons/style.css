@@ -63,6 +63,9 @@ button {
   line-height: 1.21;
 }
 
+.section {
+  padding: 64px 0;
+}
 /* header */
 .logo {
   color: var(--color-prіmary);
@@ -89,15 +92,18 @@ button {
 
 /* hero section */
 .hero-section {
+  padding: 380px 0 40px;
   background-color: var(--color-background);
 }
 
 .hero-title {
+  max-width: 484px;
   color: var(--color-primary-light);
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  margin-bottom: 32px;
 }
 
 .button-primary:hover {
@@ -134,6 +140,7 @@ button {
 
 /* advatage title */
 .advantage-section {
+  padding: 50px 0;
   background-color: var(--color-background);
 }
 .advantage-title {
@@ -141,6 +148,7 @@ button {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.22;
+  margin-bottom: 18px;
 }
 
 .advantage-text {
@@ -148,4 +156,12 @@ button {
   font-weight: 400;
   line-height: 1.21;
   letter-spacing: -0.28px;
+}
+
+.advantage-icon {
+  margin-bottom: 22px;
+  border: 1px solid var(--color-light-tr);
+  border-radius: 50%;
+  height: 62px;
+  width: 62px;
 }
