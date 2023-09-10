@@ -66,8 +66,45 @@ button {
 .section {
   padding: 64px 0;
 }
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
 /* header */
+.header {
+  padding-bottom: 8px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-social {
+  display: flex;
+  gap: 18px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-grow: 1;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .logo {
+  display: flex;
+  align-items: center;
   color: var(--color-prіmary);
   font-size: 18px;
   font-weight: 700;
@@ -81,6 +118,8 @@ button {
 }
 
 .nav-link {
+  display: inline-block;
+  padding: 24px 0;
   color: var(--color-prіmary);
   font-weight: 500;
   line-height: 1.14;
@@ -92,8 +131,13 @@ button {
 
 /* hero section */
 .hero-section {
-  padding: 380px 0 40px;
+  padding-bottom: 72px;
+}
+
+.hero-inner {
+  padding: 380px 40px 40px;
   background-color: var(--color-background);
+  border-radius: 30px;
 }
 
 .hero-title {
