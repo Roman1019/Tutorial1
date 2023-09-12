@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
       rel="stylesheet"
     />
+
     <!-- Styles -->
-    <link rel="stylesheet" href="./images/icnons/style.css" />
+    <link rel="stylesheet" href="./images/css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -21,7 +22,9 @@
           <nav class="header-nav">
             <a class="logo" href="index.html">
               <span class="logo-accent">Simply</span> Chocolate
-              <img src="images/icnons/Vector.png" alt="Chocolate logo" />
+              <svg width="24">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
             </a>
             <ul class="nav-list">
               <li>
@@ -43,7 +46,9 @@
           </nav>
           <div class="header-social">
             <a href="#" target="_blank"></a>
-            <img src="/images/icnons/instagram.svg" alt="Instagram" />
+            <svg width="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
             <a href="#" target="_blank"></a>
             <img src="images/icnons/twitter.svg" alt="twitter" />
           </div>
@@ -70,8 +75,8 @@
       <section class="advantage-section">
         <div class="conteiner">
           <h2 class="visually-hidden">Our advantage</h2>
-          <ul>
-            <li>
+          <ul class="advantage-list">
+            <li class="advntage-item">
               <img
                 class="advantage-icon"
                 src="images/icnons/chocolate bar 2.svg"
@@ -85,7 +90,7 @@
                 Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
             </li>
-            <li>
+            <li class="advntage-item">
               <img
                 class="advantage-icon"
                 src="images/icnons/chocolate coins 2.svg"
@@ -100,7 +105,7 @@
                 in affordable luxury today.
               </p>
             </li>
-            <li>
+            <li class="advntage-item">
               <img
                 class="advantage-icon"
                 src="images/icnons/chocolate-spoon.svg"
@@ -119,29 +124,39 @@
       </section>
       <section class="section">
         <div class="conteiner">
-          <h3>IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h3>
-          <p>
+          <h2 class="ingridients-title">
+            IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION
+          </h2>
+          <p class="ingridients-subtitle">
             At Simply Chocolate, we believe that the secret to exceptional
             chocolate is in the details. From the sourcing of the finest
             ingredients to the careful crafting of each individual piece, every
             step of our process adds up to one exceptional taste sensation.
           </p>
-          <ul>
-            <li>
-              <img src="images/chocolate.png" alt="Chocolate" />
-              <h3>milk chocolate</h3>
+          <ul class="ingridients-list">
+            <li class="ingridients-item">
+              <div class="ingridient">
+                <img src="images/chocolate.png" alt="Chocolate" />
+                <h3>milk chocolate</h3>
+              </div>
+            </li>
+            <li class="ingridients-item">
+              <div class="ingridient">
+                <img src="images/milk.png" alt="milk" />
+                <h3>milk</h3>
+              </div>
             </li>
             <li>
-              <img src="images/milk.png" alt="milk" />
-              <h3>milk</h3>
+              <div class="ingridient">
+                <img src="images/nuts.png" alt="nuts" />
+                <h3>nuts</h3>
+              </div>
             </li>
-            <li>
-              <img src="images/nuts.png" alt="nuts" />
-              <h3>nuts</h3>
-            </li>
-            <li>
-              <img src="images/semi.png" alt="semi" />
-              <h3>semi-sweet chocolate</h3>
+            <li class="ingridients-item">
+              <div class="ingridient">
+                <img src="images/semi.png" alt="semi" />
+                <h3>semi-sweet chocolate</h3>
+              </div>
             </li>
           </ul>
         </div>
