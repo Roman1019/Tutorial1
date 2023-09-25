@@ -492,4 +492,8 @@ button {
   right: 24px;
 }
 
+table td,
+table th {
+  border: 1px solid black;
+}
 /* END Modal */
