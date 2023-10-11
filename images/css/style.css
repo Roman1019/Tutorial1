@@ -458,9 +458,10 @@ button {
 .backdrop {
   position: fixed;
   inset: 0;
+  padding: 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
   visibility: visible;
@@ -472,9 +473,14 @@ button {
   visibility: hidden;
   pointer-events: none;
 }
+
 .modal {
   position: relative;
-  width: 610px;
+  width: 100%;
+  max-width: 610px;
+  height: 100%;
+  max-height: 1058px;
+  overflow-y: auto;
   background-color: var(--c-background-light);
   border-radius: 15px;
   padding: 48px;
@@ -492,8 +498,93 @@ button {
   right: 24px;
 }
 
-table td,
-table th {
-  border: 1px solid black;
+.modal-field {
+  margin-bottom: 18px;
 }
-/* END Modal */
+
+.modal-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.modal-input {
+  width: 100%;
+  border: 1.5px solid var(--c-primary-tr);
+  border-radius: 13px;
+  background-color: var(--c-background-light);
+  padding: 22px 24px;
+  transition: border-color 250ms;
+}
+
+.modal-textarea:focus,
+.modal-input:focus {
+  outline: none;
+  border-color: var(--c-brand);
+}
+
+.modal-textarea::placeholder,
+.modal-input::placeholder {
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  color: #4040404d;
+}
+
+.modal-input-phone {
+  padding-left: 74px;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-input-icon {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms;
+}
+
+/* .modal-input:focus + .modal-input-icon {
+  fill: var(--c-brand);
+} */
+
+.modal-textarea {
+  min-height: 137px;
+  resize: none;
+  width: 100%;
+  border: 1.5px solid var(--c-primary-tr);
+  border-radius: 13px;
+  background-color: var(--c-background-light);
+  padding: 22px 24px;
+}
+
+.modal-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.modal-checkbox-check {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--c-primary);
+  border-radius: 2px;
+}
+
+.modal-checkbox-icon {
+  opacity: 0;
+}
+
+.modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
+  opacity: 1;
+}
+
+.modal-button {
+  display: block;
+  margin: 0 auto;
+}

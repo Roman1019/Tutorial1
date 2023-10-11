@@ -349,45 +349,114 @@
       </section>
     </main>
     <footer></footer>
-    
-      
-    <div class="backdrop" data-modal>
+
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close" data-modal-close>X</button>
-        <table>
-          <div class="backdrop"><tr>
-            <div class="modal"> <td>ква</td>
-              <td>поверх</td>
-              <td>ціна</td>
-            </tr>
-            <tr>
-              <td>стан</td>
-              <td>1</td>
-              <td>20000</td>
-            </tr>
-            <tr>
-              <td>стан</td>
-              <td>1</td>
-              <td>20000</td>
-            </tr>
-            <tr>
-              <td>стан</td>
-              <td>1</td>
-              <td>20000</td>
-            </tr>
-            <tr>
-              <td>стан</td>
-              <td>1</td>
-              <td>20000</td>
-            </tr>
-            <tr>
-              <td>разом</td>
-              <td>10</td>
-              <td>200000000</td>
-            </tr>
-          </table>
+        <button class="modal-close" type="button" data-modal-close>X</button>
+        <h2 class="section-title">Buy now</h2>
+        <form name="contact-form" autocomplete="off">
+          <fieldset>
+            <legend class="modal-label">Personal information</legend>
+            <div class="modal-field">
+              <label class="visually-hidden" for="user-name">Name</label>
+              <input
+                class="modal-input"
+                id="user-name"
+                type="text"
+                name="user-name"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="modal-field">
+              <label class="visually-hidden" for="user-surname">Surname</label>
+              <input
+                class="modal-input"
+                id="user-surname"
+                type="text"
+                name="user-surname"
+                placeholder="Surname"
+              />
+            </div>
+
+            <div class="modal-field">
+              <label class="modal-label" for="user-email">Email</label>
+              <input
+                class="modal-input"
+                id="user-email"
+                type="email"
+                name="user-email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="modal-field">
+              <label class="modal-label" for="user-tel">Phone number</label>
+              <div class="modal-input-wrap">
+                <input
+                  class="modal-input modal-input-phone"
+                  id="user-tel"
+                  type="tel"
+                  name="user-tel"
+                  placeholder="Phone number"
+                />
+                <svg class="modal-input-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-ukraine"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="modal-field">
+              <label class="modal-label" for="user-card-number">
+                Card number
+              </label>
+              <input
+                class="modal-input"
+                id="user-card-number"
+                type="tel"
+                name="user-card-number"
+                placeholder="Enter card"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="visually-hidden">Additional information</legend>
+            <div>
+              <label class="modal-label" for="user-comment">Comment</label>
+              <textarea
+                class="modal-textarea"
+                id="user-comment"
+                name="user-comment"
+                placeholder="Enter text"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <div class="modal-checkbox">
+            <input
+              class="modal-checkbox-input visually-hidden"
+              id="privacy-policy"
+              type="checkbox"
+              name="privacy-policy"
+            />
+            <span class="modal-checkbox-check">
+              <svg class="modal-checkbox-icon">
+                <use></use>
+              </svg>
+            </span>
+            <label class="modal-checkbox-label" for="privacy-policy">
+              I agree with <a href="#">Privacy policy</a>
+            </label>
+          </div>
+
+          <button class="modal-button button-primary" type="submit">
+            Submit
+          </button>
+        </form>
       </div>
     </div>
+
     <script src="./images/JS/js modal.js"></script>
   </body>
 </html>
